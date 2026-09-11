@@ -9,7 +9,7 @@
 <body>
     <div id="app">
         <ul>
-            <li v-for="(framework, index) in frameworks" :key="index">
+            <li v-for="(framework, index) in frameworks" :key=`framework-${index}`">
                 {{ index + 1 }}. {{ framework.name }}
             </li>
         </ul>
